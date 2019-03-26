@@ -7,6 +7,6 @@ class EmailParser
 	end
 
   def parse
-    self.list.gsub(/,/, ' ').split
+    self.list.uniq..gsub(/,/, ' ').split
   end
 end
