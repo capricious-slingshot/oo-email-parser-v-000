@@ -7,6 +7,6 @@ class EmailParser
 	end
 
   def parse
-    self.list.split(',').each {|e| e.strip}
+    self.list.split(',').collect {|e| e.strip}
   end
 end
