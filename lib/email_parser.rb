@@ -7,6 +7,6 @@ class EmailParser
 	end
 
   def parse
-    self.list.split( ',' || ' ')
+    self.list.split( ',')
   end
 end
